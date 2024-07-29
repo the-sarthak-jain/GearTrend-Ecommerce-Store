@@ -4,12 +4,12 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 
 ## Features
 
-- Home Page: Displays a selection of products focusing on the latest items.
-- Product Pages: Includes a demo product page for the iPhone 13 Pro Max.
-- Admin Dashboard: Manages products and user registrations with filtering capabilities.
-- Product Management: Upload and view products.
-- User Registration: Register and manage users.
-- Contact Us: Form for users to get in touch.
+- **Home Page:** Displays a selection of products focusing on the latest items.
+- **Product Pages:** Includes a demo product page for the iPhone 13 Pro Max.
+- **Admin Dashboard:** Manages products and user registrations with filtering capabilities.
+- **Product Management:** Upload and view products.
+- **User Registration:** Register and manage users.
+- **Contact Us:** Form for users to get in touch.
 - Responsive Design with Bootstrap
 - DataTables used in the admin panel to filter products and user registrations
 
@@ -83,30 +83,30 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 
 ## Screenshots
 
-**Homepage:**
+- **Homepage:**
 ![Homepage Screenshot](screenshots/home-page-GearTrend.png)
 
-**Login Page:**
+- **Login Page:**
 ![Login Page Screenshot](screenshots/login-page-GearTrend.png)
 
-**Admin Panel:**
+- **Admin Panel:**
 ![Admin Panel Screenshot](screenshots/admin-panel-GearTrend.png)
 
 ## Usage
 
-**Home Page:**
+- **Home Page:**
 
 The home page displays the latest products in both ascending and descending order of their creation dates.
 
-**Admin Dashboard:**
+- **Admin Dashboard:**
 
 The admin dashboard allows you to manage products and user registrations. Please log in to access the admin dashboard.
 
-**Product Details:**
+- **Product Details:**
 
 Click on a product to view its details.
 
-**Contact Forms:**
+- **Contact Forms:**
 
 A contact form is available using MongoDB integration.
 
