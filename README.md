@@ -83,13 +83,13 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 
 ## Screenshots
 
-### Homepage
+**Homepage**
 ![Homepage Screenshot](screentshots/home-page-GearTrend.png)
 
-### Login Page
+**Login Page**
 ![Login Page Screenshot](screenshots/login-page-GearTrend.png)
 
-### Admin Panel
+**Admin Panel**
 ![Admin Panel Screenshot](screenshots/admin-panel-GearTrend.png)
 
 ## Usage
@@ -98,15 +98,15 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 
 The home page displays the latest products in both ascending and descending order of their creation dates.
 
-# Admin Dashboard
+**Admin Dashboard**
 
 The admin dashboard allows you to manage products and user registrations. Please log in to access the admin dashboard.
 
-# Product Details
+**Product Details**
 
 Click on a product to view its details.
 
-# Contact Forms
+**Contact Forms**
 
 A contact form is available using MongoDB integration.
 
