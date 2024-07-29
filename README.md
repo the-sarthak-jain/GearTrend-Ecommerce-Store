@@ -48,7 +48,7 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 
 4. **Database Configuration**:
 
-   Create a `db.js` file in the root directory with the following content:
+   Modify the `db.js` file in the database folder with the following content:
 
    ```javascript
    const mongoose = require('mongoose');
@@ -94,19 +94,19 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 
 ## Usage
 
-### Home Page
+# Home Page
 
 The home page displays the latest products in both ascending and descending order of their creation dates.
 
-### Admin Dashboard
+# Admin Dashboard
 
 The admin dashboard allows you to manage products and user registrations. Please log in to access the admin dashboard.
 
-### Product Details
+# Product Details
 
 Click on a product to view its details.
 
-### Contact Forms
+# Contact Forms
 
 A contact form is available using MongoDB integration.
 
