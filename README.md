@@ -106,7 +106,7 @@ The admin dashboard allows you to manage products and user registrations. Please
 
 Click on a product to view its details.
 
-**Contact Forms**
+**Contact Forms:**
 
 A contact form is available using MongoDB integration.
 
