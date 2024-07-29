@@ -84,7 +84,7 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 ## Screenshots
 
 **Homepage**
-![Homepage Screenshot](screentshots/home-page-GearTrend.png)
+![Homepage Screenshot](screenshots/home-page-GearTrend.png)
 
 **Login Page**
 ![Login Page Screenshot](screenshots/login-page-GearTrend.png)
