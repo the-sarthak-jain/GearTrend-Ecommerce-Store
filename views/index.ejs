@@ -1,0 +1,635 @@
+<%-include('./common/header.ejs')%>
+    <style>
+        .top-card i,
+        .top-card span a {
+            color: #0046be;
+        }
+
+        .top-card {
+            border: 1px solid #0046be;
+            cursor: pointer;
+        }
+
+        .top-card:hover {
+            background-color: #0046be;
+            color: white;
+        }
+
+        .top-card:hover {
+
+            i,
+            span a {
+                color: white;
+            }
+        }
+
+        .prod-card img {
+            height: 280px;
+            max-width: 315px;
+        }
+
+        .prod-card p,
+        .ver-cards i {
+            color: #ffc662;
+        }
+
+        .small-card-banner {
+            background-image: url(./images/index/card-banner.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* width: 18rem; */
+        }
+
+        .small-cards img {
+            height: 180px;
+            max-width: 200px;
+        }
+
+        .bottom-card i,
+        .bottom-card span a {
+            color: #fff;
+        }
+
+        .bottom-card {
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+
+        .bottom-card:hover {
+            background-color: #fff;
+            /* color: #0046be; */
+        }
+
+        .bottom-card:hover {
+
+            i,
+            span a {
+                color: #0046be;
+            }
+        }
+    </style>
+
+    <!-- ------------------ Top Card and Carousel ------------------ -->
+
+    <div class="container-xxl" style="background-color: #f1f1f1;">
+
+        <!-- ------------------ Top Cards ------------------ -->
+
+        <div class="row py-3 px-4">
+            <div class="col-12 col-sm-6 col-md-3 py-2">
+                <div class="top-card d-flex align-items-center justify-content-center rounded-4 py-5">
+                    <i class="fa-solid fa-mobile-screen fs-1 me-3"></i>
+                    <span class="fs-5"><a href="#">Smartphones</a></span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 py-2">
+                <div class="top-card d-flex align-items-center justify-content-center rounded-4 py-5">
+                    <i class="fa-solid fa-laptop fs-1 me-3"></i>
+                    <span class="fs-5"><a href="#">Laptops</a></span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 py-2">
+                <div class="top-card d-flex align-items-center justify-content-center rounded-4 py-5">
+                    <i class="fa-solid fa-headphones-simple fs-1 me-3"></i>
+                    <span class="fs-5"><a href="#">Headphones</a></span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 py-2">
+                <div class="top-card d-flex align-items-center justify-content-center rounded-4 py-5">
+                    <i class="fa-solid fa-computer fs-1 me-3"></i>
+                    <span class="fs-5"><a href="#">Computers</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------ Carousel ------------------ -->
+
+        <div class="row">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner px-4 pt-2 pb-4">
+                    <div class="carousel-item active">
+                        <img src="./images/index/home-slide-1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/index/home-slide-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/index/home-slide-3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------ Product Cards/Featured Products ------------------ -->
+
+    <!-- <div class="container-fluid">
+        <div class="row pt-4 mt-2 px-0">
+            <div class="col-2 col-sm-3 col-lg-4"><hr></div>
+            <div class="col-8 col-sm-6 col-lg-4 text-center">
+                <h2>Featured Products</h2>
+            </div>
+            <div class="col-2 col-sm-3 col-lg-4"><hr></div>
+        </div>
+
+        <div class="row pb-4 px-3 prod-card d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/index/iphone.jpg" class="card-img-top p-3" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-1 text-body-secondary">Smartphones</h6>
+                        <h5 class="card-title">Iphone 13 Pro Max</h5>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <span class="card-text text-success fs-5">₹1,29,000.00</span> <s
+                            class="text-danger">₹1,32,900.00</s>
+                        <a href="#" class="btn btn-outline-primary mt-2 w-100">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/index/jbl-headphone.jpg" class="card-img-top p-3" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-1 text-body-secondary">Headphones</h6>
+                        <h5 class="card-title">JBL Quantum 910</h5>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></p>
+                        <span class="card-text text-success fs-5">₹23,999.00</span> <s
+                            class="text-danger">₹26,999.00</s>
+                        <a href="#" class="btn btn-outline-primary mt-2  w-100">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/index/sam-gal-22.jpg" class="card-img-top p-3" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-1 text-body-secondary">Smartphones</h6>
+                        <h5 class="card-title">Samsung Galaxy 22</h5>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <span class="card-text text-success fs-5">₹77,999.00</span> <s
+                            class="text-danger">₹1,31,900.00</s>
+                        <a href="#" class="btn btn-outline-primary mt-2  w-100">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/index/hp-omen-lap.webp" class="card-img-top p-3" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-1 text-body-secondary">Laptops</h6>
+                        <h5 class="card-title">HP Omen Laptop</h5>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></p>
+                        <span class="card-text text-success fs-5">₹1,38,990.00</span> <s
+                            class="text-danger">₹1,75,024.00</s>
+                        <a href="#" class="btn btn-outline-primary mt-2  w-100">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container-fluid">
+        <div class="row pt-4 mt-2 px-0">
+            <div class="col-2 col-sm-3 col-lg-4">
+                <hr>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-4 text-center">
+                <h2>Featured Products</h2>
+            </div>
+            <div class="col-2 col-sm-3 col-lg-4">
+                <hr>
+            </div>
+        </div>
+
+        <% if(prodData.length>0){ %>
+        <div class="row prod-card pb-4 px-3">
+            <!-- Card 1 -->
+            <% for(var i=0; i<prodData.length; i++){%>
+
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card h-100">
+                    <a href="/show/<%= prodData[i]._id %>">
+                        <div class="d-flex justify-content-center">
+                            <img src="<%= prodData[i].prodImage %>" class="card-img-top p-3">
+
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-1 text-body-secondary"><%= prodData[i].prodCategory %></h6>
+                            <h5 class="card-title text-dark"><%= prodData[i].prodName %></h5>
+                            <p>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <span class="card-text text-success fs-5">₹<%= prodData[i].prodDealPrice %></span> <s
+                                class="text-danger">₹<%= prodData[i].prodOrgPrice %></s>
+                            <a href="/show/<%= prodData[i]._id %>" class="btn btn-outline-primary mt-2 w-100">ADD TO CART</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <% } %>
+
+            <% } else { %>
+                No record found!
+
+                <%} %>
+            <!-- <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card h-100">
+                    <a href="/iphone-13-pro-max">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/index/iphone.jpg" class="card-img-top p-3" alt="iPhone 13 Pro Max">
+
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-1 text-body-secondary">Smartphones</h6>
+                            <h5 class="card-title text-dark">iPhone 13 Pro Max</h5>
+                            <p>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <span class="card-text text-success fs-5">₹1,29,000.00</span> <s
+                                class="text-danger">₹1,32,900.00</s>
+                            <a href="#" class="btn btn-outline-primary mt-2 w-100">ADD TO CART</a>
+                        </div>
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- Card 2 -->
+            <!-- <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card h-100">
+                    <a href="#">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/index/jbl-headphone.jpg" class="card-img-top p-3" alt="JBL Quantum 910">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-1 text-body-secondary">Headphones</h6>
+                            <h5 class="card-title text-dark">JBL Quantum 910</h5>
+                            <p>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </p>
+                            <span class="card-text text-success fs-5">₹23,999.00</span> <s
+                                class="text-danger">₹26,999.00</s>
+                            <a href="#" class="btn btn-outline-primary mt-2 w-100">ADD TO CART</a>
+                        </div>
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- Card 3 -->
+            <!-- <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card h-100">
+                    <a href="#">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/index/sam-gal-22.jpg" class="card-img-top p-3" alt="Samsung Galaxy 22">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-1 text-body-secondary">Smartphones</h6>
+                            <h5 class="card-title text-dark">Samsung Galaxy 22</h5>
+                            <p>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <span class="card-text text-success fs-5">₹77,999.00</span> <s
+                                class="text-danger">₹1,31,900.00</s>
+                            <a href="#" class="btn btn-outline-primary mt-2 w-100">ADD TO CART</a>
+                        </div>
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- Card 4 -->
+            <!-- <div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card h-100">
+                    <a href="#">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/index/hp-omen-lap.webp" class="card-img-top p-3" alt="HP Omen Laptop">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-1 text-body-secondary">Laptops</h6>
+                            <h5 class="card-title text-dark">HP Omen Laptop</h5>
+                            <p>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </p>
+                            <span class="card-text text-success fs-5">₹1,38,990.00</span> <s
+                                class="text-danger">₹1,75,024.00</s>
+                            <a href="#" class="btn btn-outline-primary mt-2 w-100">ADD TO CART</a>
+                        </div>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- ------------------ Small Cards/Top Deals ------------------ -->
+
+    <div class="container-fluid mb-3">
+        <div class="row py-4 mt-2 px-3">
+            <div class="col-3 col-sm-4">
+                <hr>
+            </div>
+            <div class="col-6 col-sm-4 text-center">
+                <h2>Top Deals</h2>
+            </div>
+            <div class="col-3 col-sm-4">
+                <hr>
+            </div>
+        </div>
+        <div class="row small-cards">
+            <div class="col-12 col-lg-4 col-md-6 bg-white p-2 ms-2">
+                <div class="h5 pb-3 px-2 d-flex justify-content-between">Explore more <i
+                        class="fa-solid fa-circle-chevron-right text-primary h4"></i></div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <div class="d-flex justify-content-center">
+                                <img src="./images/index/redmi-tablet.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tablets</h5>
+                                <p class="card-text">Min. 50% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <div class="d-flex justify-content-center">
+                                <img src="./images/index/speakers.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Speakers</h5>
+                                <p class="card-text">Min. 50% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <div class="d-flex justify-content-center">
+                                <img src="./images/index/gam-mouse.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mouses</h5>
+                                <p class="card-text">Min. 50% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <div class="d-flex justify-content-center">
+                                <img src="./images/index/noise-watch.webp" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Smartwatch</h5>
+                                <p class="card-text ">Min. 70% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-md-block small-card-banner ms-3 me-2"></div>
+        </div>
+    </div>
+
+    <!-- ------------------ Bottom Cards ------------------ -->
+
+    <div class="container-fluid">
+        <div class="row py-3 px-4 bg-dark">
+            <div class="col-12 col-sm-6 col-lg-3 py-2">
+                <div class="bottom-card d-flex align-items-center justify-content-center rounded-4 py-5">
+                    <i class="fa-solid fa-truck-fast fs-1 me-3"></i>
+                    <span class="fs-5"><a href="#">Free Delivery</a></span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 py-2">
+                <div class="bottom-card d-flex align-items-center justify-content-center rounded-4 py-5">
+                    <i class="fa-solid fa-arrow-right-arrow-left fs-1 me-3"></i>
+                    <span class="fs-5"><a href="#">Returns</a></span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 py-2">
+                <div class="bottom-card d-flex align-items-center justify-content-center rounded-4 py-5">
+                    <i class="fa-solid fa-headphones fs-1 me-3"></i>
+                    <span class="fs-5"><a href="#">Support 24/7</a></span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 py-2">
+                <div class="bottom-card d-flex align-items-center justify-content-center rounded-4 py-5">
+                    <i class="fa-regular fa-credit-card fs-1 me-3 "></i>
+                    <span class="fs-5"><a href="#">Payment Secure</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------ Vertical Cards Sec-1 ------------------ -->
+
+    <div class="container mt-5">
+        <div class="row mt-1 pb-3 px-0">
+            <div class="col-2 col-sm-3 col-lg-3">
+                <hr>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-6 text-center">
+                <h2>Smartphones & Headphones</h2>
+            </div>
+            <div class="col-2 col-sm-3 col-lg-3">
+                <hr>
+            </div>
+        </div>
+        <% if(prodData.length>0){ %>
+        <div class="row ver-cards">
+            <!-- Card 1 -->
+            <% for(var i=0; i<3; i++){%>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="/show/<%= prodData[i]._id %>">
+                    <div class="row g-0 py-3 px-2">
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h6 class="card-subtitle text-muted"><%= prodData[i].prodCategory %></h6>
+                                <h5 class="card-title text-dark"><%= prodData[i].prodName %></h5>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <span class="card-text text-danger fs-5">₹<%= prodData[i].prodDealPrice %> </span><s
+                                    class="text-dark">₹<%= prodData[i].prodOrgPrice %></s>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <img src="<%= prodData[i].prodImage %>" class="img-fluid rounded-end">
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <% } %>
+
+            <% } else { %>
+                No record found!
+
+                <%} %>
+            <!-- Card 2 -->
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="row g-0 py-3 px-2">
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h6 class="card-subtitle text-muted">Smartphone</h6>
+                                <h5 class="card-title">Samsung Galaxy S22</h5>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <span class="card-text text-danger fs-5">₹77,999 </span><s
+                                    class="text-dark">₹1,31,900</s>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <img src="./images/index/sam-gal-22.jpg" class="img-fluid rounded-end"
+                                alt="Samsung Galaxy S22">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Card 3 -->
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="row g-0 py-3 px-2">
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h6 class="card-subtitle text-muted">Headphone</h6>
+                                <h5 class="card-title">JBL Quantum 910</h5>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half-stroke"></i></p>
+                                <span class="card-text text-danger fs-5">₹23,999 </span><s class="text-dark">₹26,999</s>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <img src="./images/index/jbl-headphone.jpg" class="img-fluid rounded-end" alt="JBL Quantum">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- ------------------ Vertical Cards Sec-2 ------------------ -->
+
+    <div class="container mt-5">
+        <div class="row pb-3 px-0">
+            <div class="col-2 col-sm-3 col-lg-3">
+                <hr>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-6 text-center">
+                <h2>Smartwatches & Accessories</h2>
+            </div>
+            <div class="col-2 col-sm-3 col-lg-3">
+                <hr>
+            </div>
+        </div>
+        <% if(newerToOlderProdData.length>0){ %>
+        <div class="row ver-cards">
+            <!-- Card 1 -->
+            <% for(var i=0; i<3; i++){%>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="/show/<%= newerToOlderProdData[i]._id %>">
+                    <div class="row g-0 py-3 px-2">
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h6 class="card-subtitle text-muted"><%= newerToOlderProdData[i].prodCategory %></h6>
+                                <h5 class="card-title text-dark"><%= newerToOlderProdData[i].prodName %></h5>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <span class="card-text text-danger fs-5">₹<%= newerToOlderProdData[i].prodDealPrice %> </span><s class="text-dark">₹<%= newerToOlderProdData[i].prodOrgPrice %></s>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <img src="<%= newerToOlderProdData[i].prodImage %>" class="img-fluid rounded-end" alt="iPhone 13">
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <% } %>
+
+            <% } else { %>
+                No record found!
+
+                <%} %>
+            <!-- Card 2 -->
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="row g-0 py-3 px-2">
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h6 class="card-subtitle text-muted">Speakers</h6>
+                                <h5 class="card-title">Audioengine A5+</h5>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half-stroke"></i></p>
+                                <span class="card-text text-danger fs-5">₹79,466 </span><s class="text-dark">₹86,999</s>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <img src="./images/index/speakers.jpg" class="img-fluid rounded-end"
+                                alt="Samsung Galaxy S22">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Card 3 -->
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="row g-0 py-3 px-2">
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h6 class="card-subtitle text-muted">Mouse</h6>
+                                <h5 class="card-title">Redragon M915-RGB</h5>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <span class="card-text text-danger fs-5">₹3,799 </span><s class="text-dark">₹4,599</s>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <img src="./images/index/gam-mouse.jpg" class="img-fluid rounded-end" alt="JBL Quantum">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <%-include('./common/footer.ejs')%>

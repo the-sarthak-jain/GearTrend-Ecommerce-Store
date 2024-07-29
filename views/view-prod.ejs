@@ -1,0 +1,74 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+<%-include('./admindashboard/header.ejs')%>
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-2"><%-include('./admindashboard/left.ejs')%></div>
+            <div class="col-10">
+                <div class="text-center justify-content-center m-5">
+                    <h1 class="py-3 text-dark text-opacity-75">All Products</h1>
+                    <div>
+                        <% if(prodData.length>0){ %>
+                            <table id="viewProducts" class="table display">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Product Image</th>
+                                        <th scope="col">Product Name</th>
+                                        <th scope="col">Product Category</th>
+                                        <th scope="col">Product MRP</th>
+                                        <th scope="col">Product Deal Price</th>
+                                        <th scope="col">Actions</th>
+                                        <!-- <th scope="col">Product Price</th>
+                                        <th scope="col">Stock Quantity</th>
+                                        <th scope="col">Product Weight</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(var i=0; i<prodData.length; i++){%>
+                                        <tr>
+                                            <th scope="row">
+                                                <%= [i+1] %>
+                                            </th>
+                                            <td>
+                                                <img src="<%= prodData[i].prodImage %>" alt="" width="70px">
+                                            </td>
+                                            <td>
+                                                <%= prodData[i].prodName %>
+                                            </td>
+                                            <td>
+                                                <%= prodData[i].prodCategory %>
+                                            </td>
+                                            <td>
+                                                <%= prodData[i].prodOrgPrice %>
+                                            </td>
+                                            <td>
+                                                <%= prodData[i].prodDealPrice %>
+                                            </td>
+                                            <!-- <td>
+                                                <%= prodData[i].prodWeight %>
+                                            </td> -->
+                                            <td>
+                                            <a href="/edit1/<%= prodData[i]._id %>"><button type="button" class="btn btn-primary me-2">Edit</button></a>
+                              <a href="/delete/<%= prodData[i]._id %>"><button type="button" class="btn btn-danger me-2">Delete</button></a>
+                            </td>
+                                        </tr>
+                                        <% } %>
+                                </tbody>
+                            </table>
+                            <% } else { %>
+                                No record found!
+
+                                <%} %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#viewProducts').DataTable();
+        });
+    </script>

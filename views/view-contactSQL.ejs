@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+<%- include('./admindashboard/header.ejs') %>
+<div class="container-xxl">
+    <div class="row">
+        <div class="col-2">
+            <%- include('./admindashboard/left.ejs') %>
+        </div>
+        <div class="col-10">
+            <div class="d-flex justify-content-center m-5">
+                <h1 class="text-dark text-opacity-75">View Contact List</h1>
+            </div>
+            <div>
+                <% if (contacts.length > 0) { %>
+                    <table id="contactTable" class="table display">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Mobile</th>
+                                <th scope="col">Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (var i = 0; i < contacts.length; i++) { %>
+                                <tr>
+                                    <th scope="row"><%= i + 1 %></th>
+                                    <td><%= contacts[i].name %></td>
+                                    <td><%= contacts[i].email %></td>
+                                    <td><%= contacts[i].mob %></td>
+                                    <td><%= contacts[i].msg %></td>
+                                </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                <% } else { %>
+                    <p>No contacts found!</p>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#contactTable').DataTable();
+    });
+</script>

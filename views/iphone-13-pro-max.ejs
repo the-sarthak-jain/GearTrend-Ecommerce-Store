@@ -1,0 +1,86 @@
+<%-include('./common/header.ejs')%>
+
+    <style>
+        span i {
+            color: #ffc662;
+        }
+    </style>
+
+    <div class="container-fluid py-3" style="background-color: #f4f4f4;">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">iPhone 13 Pro Max</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-6 p-4 border border-1 rounded-3 border-dark-subtle justify-content-center">
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="col-8 d-flex justify-content-center align-items-center">
+                        <img class="w-100" src="./images/index/iphone.jpg" alt="">
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-2 p-0 m-2"><img src="./images/iphone-13-pm/iphone-13-pro-max-2.webp" alt="" class="w-100 border border-dark-subtle rounded-4"></div>
+                    <div class="col-2 p-0 m-2"><img src="./images/iphone-13-pm/iphone-13-pro-max-3.webp" alt="" class="w-100 border border-dark-subtle rounded-4"></div>
+                    <div class="col-2 p-0 m-2"><img src="./images/iphone-13-pm/iphone-13-pro-max-4.webp" alt="" class="w-100 border border-dark-subtle rounded-4"></div>
+                    <div class="col-2 p-0 m-2"><img src="./images/iphone-13-pm/iphone-13-pro-max-5.webp" alt="" class="w-100 border border-dark-subtle rounded-4"></div>
+                </div>
+            </div>
+            <div class="col-6 p-4">
+                <p class="text-body-secondary m-0">Apple iPhone</p>
+                <h3 class="pb-1">Apple iPhone 13 Pro Max (Gold, 256 GB)</h3>
+                <span><i class="fa-solid fa-star my-2"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i></span> <span>(4.9) 127 Reviews</span>
+                <div class="my-3">
+                    <span class="fs-2 text-success">₹1,29,000.00 <sup
+                            class="text-danger fs-5"><s>₹1,32,900.00</s></sup></span>
+                </div>
+                <div class="row my-3">
+                    <div class="col-6">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-5 justify-self-end"><span for="">Quantity:</span></div>
+
+                            <div class="col-7">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10+">10+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-outline-danger w-100 me-2">
+                            <i class="fa-regular fa-heart"></i> Wishlist</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-outline-warning w-100 me-2">Add to
+                            Cart</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-warning text-light w-100">Buy Now</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <%-include('./common/footer.ejs')%>

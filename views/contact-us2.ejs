@@ -1,0 +1,36 @@
+<%-include('./common/header.ejs')%>
+
+
+<div class="container">
+    <div class="row d-flex justify-content-center py-5">
+
+        <div class="col-12 col-md-6">
+            <form method="post">
+                <h2 class="mb-3">Contact Us 2</h2>
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Full Name</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPhone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" name="mob" id="exampleInputPhone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputMessage" class="form-label">Message:</label>
+                    <textarea name="msg" class="form-control" rows="4" id="exampleInputMessage" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary me-2" style="border-radius: 3px;">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<%-include('./common/footer.ejs')%>

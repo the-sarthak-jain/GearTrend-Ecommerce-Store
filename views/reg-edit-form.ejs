@@ -1,0 +1,36 @@
+<%-include('./admindashboard/header.ejs')%>
+<div class="container-xxl">
+    <div class="row">
+        <div class="col-2"><%-include('./admindashboard/left.ejs')%></div>
+        <div class="col-10">
+            <div class="text-center justify-content-center">
+                <h1 class="py-5 text-dark text-opacity-75">Edit Registration</h1>
+                <div>
+            <form method="post">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="username" class="col-form-label">Username:</label>
+                        <input type="text" class="form-control" value="<%= editData.username %>" name="username" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" value="<%= editData.email %>" name="email" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="col-form-label">Password:</label>
+                        <input type="password" class="form-control" value="<%= editData.password %>" name="password" id="password" required>
+                    </div>
+                    <!-- <div class="mb-3">
+                        <label for="avatar" class="col-form-label">Avatar:</label>
+                        <input type="file" class="form-control" value="<%= editData.avatar %>" name="avatar" id="avatar" required multiple>
+                    </div> -->
+                </div>
+                <div class="">
+                    <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
