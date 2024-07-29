@@ -94,7 +94,7 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 
 ## Usage
 
-# Home Page
+**Home Page**
 
 The home page displays the latest products in both ascending and descending order of their creation dates.
 
