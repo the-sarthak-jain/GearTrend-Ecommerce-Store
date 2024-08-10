@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "your-build-command",
-    "start": "node app.js"
+    "start": "node app.js",
     "server": "nodemon app.js"
   }
 }
