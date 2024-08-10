@@ -68,7 +68,7 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 
 5. **Run the application**:
    ```sh
-   npm start
+   nodemon ./app.js
    ```
 
 6. **Open your browser and go to `http://localhost:4230`.**
