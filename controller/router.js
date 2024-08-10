@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
         res.render('index', { prodData, newerToOlderProdData });
     } catch (err) {
         console.log(err);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send('Internal Server Error in Home Page');
     }
 });
 
@@ -68,7 +68,7 @@ router.post('/login', async (req, res) => {
         });
     } catch (error) {
         console.log(error);
-        res.status(500).send('Internal Server Error'); // Status code for error handling
+        res.status(500).send('Internal Server Error at Login'); // Status code for error handling
     }
 });
 
@@ -137,7 +137,7 @@ router.get('/view-products', async (req, res) => {
         res.render('view-prod', { prodData });
     } catch (err) {
         console.log(err);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send('Internal Server Error at View Products');
     }
 });
 
@@ -194,7 +194,7 @@ router.get('/show/:id', async (req, res) => {
         res.render('product-detail', { showData });
     } catch (err) {
         console.log(err);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send('Internal Server Error at Product Details');
     }
 });
 
@@ -220,7 +220,7 @@ router.get('/view-registration', async (req, res) => {
         res.render('view-registration', { regdata });
     } catch (err) {
         console.log(err);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send('Internal Server Error at View Registration');
     }
 });
 
@@ -231,7 +231,7 @@ router.get("/delete/:id", async (req, res) => {
         res.redirect('/view-registration');
     } catch (err) {
         console.log(err);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send('Internal Server Error at Deleting the Product');
     }
 });
 
@@ -246,7 +246,7 @@ router.get("/edit/:id", async (req, res) => {
         res.render('reg-edit-form', { editData });
     } catch (err) {
         console.log(err);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send('Internal Server Error at Editing the Products');
     }
 });
 
@@ -263,7 +263,7 @@ router.post("/edit/:id", async (req, res) => {
         if (!regUpdate) return res.status(404).json({ message: "Item not found!" });
         res.redirect('/view-registration');
     } catch (err) {
-        res.status(500).json({ message: "Server Error!" });
+        res.status(500).json({ message: "Server Error at Updating Registration!" });
         console.log(err);
     }
 });
