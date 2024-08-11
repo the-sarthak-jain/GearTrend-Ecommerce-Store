@@ -20,9 +20,6 @@
                                         <th scope="col">Product MRP</th>
                                         <th scope="col">Product Deal Price</th>
                                         <th scope="col">Actions</th>
-                                        <!-- <th scope="col">Product Price</th>
-                                        <th scope="col">Stock Quantity</th>
-                                        <th scope="col">Product Weight</th> -->
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -46,13 +43,10 @@
                                             <td>
                                                 <%= prodData[i].prodDealPrice %>
                                             </td>
-                                            <!-- <td>
-                                                <%= prodData[i].prodWeight %>
-                                            </td> -->
                                             <td>
-                                            <a href="/edit1/<%= prodData[i]._id %>"><button type="button" class="btn btn-primary me-2">Edit</button></a>
-                              <a href="/delete/<%= prodData[i]._id %>"><button type="button" class="btn btn-danger me-2">Delete</button></a>
-                            </td>
+                                            <button type="button" disabled class="btn btn-primary me-2"><a href="/edit1/<%= prodData[i]._id %>" class="text-white text-decoration-none">Edit</a></button>
+                                            <button type="button" disabled class="btn btn-danger me-2"><a href="/delete/<%= prodData[i]._id %>" class="text-white text-decoration-none">Delete</a></button>
+                                            </td>
                                         </tr>
                                         <% } %>
                                 </tbody>
