@@ -50,15 +50,21 @@ Check out the live demo: [GearTrend - E-commerce Store](https://geartrend-ecomme
    npm install
    ```
 
-4. **Database Configuration**:
+## Database Configuration
 
-   Modify the `db.js` file in the database folder with the following content:
+4. **Create a `.env` file in the root directory of your project** and add your MongoDB URI like this:
+
+   ```env
+   MONGO_URI="mongodb+srv://<username>:<password>@cluster0.vzsyypy.mongodb.net/sarthakdb?retryWrites=true&w=majority&appName=Cluster0"
+   ```
+
+5. **Update the `db.js` file** to use the `.env` variable:
 
    ```javascript
    const mongoose = require('mongoose');
+   require('dotenv').config();
 
-   // Replace with your actual MongoDB URI
-   const mongoURI = "mongodb+srv://<username>:<password>@cluster0.vzsyypy.mongodb.net/sarthakdb?retryWrites=true&w=majority&appName=Cluster0";
+   const mongoURI = process.env.MONGO_URI;
 
    const con = mongoose.connect(mongoURI, {
        useNewUrlParser: true,
@@ -70,12 +76,13 @@ Check out the live demo: [GearTrend - E-commerce Store](https://geartrend-ecomme
    module.exports = con;
    ```
 
-5. **Run the application**:
+
+6. **Run the application**:
    ```sh
-   nodemon ./app.js
+   npm start
    ```
 
-6. **Open your browser and go to `http://localhost:4230`.**
+7. **Open your browser and go to `http://localhost:4230`.**
 
 ## Project Structure
 
