@@ -19,7 +19,6 @@
     "nodemon": "^3.1.0"
   },
   "scripts": {
-    "build": "your-build-command",
     "start": "node app.js",
     "server": "nodemon app.js"
   }
