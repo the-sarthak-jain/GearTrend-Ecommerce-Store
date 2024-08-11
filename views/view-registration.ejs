@@ -33,8 +33,8 @@
                             <td><img src="<%= regdata[i].avatar %>" alt="" width="70px"></td>
                             <td>Active</td>
                             <td>
-                                <a href="/edit/<%= regdata[i]._id %>"><button type="button" class="btn btn-primary me-2">Edit</button></a>
-                                <a href="/delete/<%= regdata[i]._id %>"><button type="button" class="btn btn-danger me-2">Delete</button></a>
+                                <button type="button" disabled class="btn btn-primary me-2"><a href="/edit/<%= regdata[i]._id %>" class="text-white text-decoration-none">Edit</a></button>
+                                <button type="button" disabled class="btn btn-danger me-2"><a href="/delete/<%= regdata[i]._id %>" class="text-white text-decoration-none">Delete</a></button>
                             </td>
                           </tr>
                           <% } %>
