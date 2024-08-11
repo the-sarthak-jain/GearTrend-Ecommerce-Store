@@ -13,6 +13,10 @@ Welcome to GearTrend - E-commerce Store! This is a Node.js-based e-commerce proj
 - Responsive Design with Bootstrap
 - DataTables used in the admin panel to filter products and user registrations
 
+## Live Demo
+
+Check out the live demo: [GearTrend - E-commerce Store](https://geartrend-ecommerce-store.onrender.com/)
+
 ## Technologies Used
 
 - Node.js
