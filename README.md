@@ -128,6 +128,9 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 - [FontAwesome](https://fontawesome.com/) for icons.
 - [EJS](https://www.npmjs.com/package/ejs) for templating.
 
+---
 ## Contact
 
-For any inquiries or support, please contact [Sarthak Jain](mail.sarthakjain@gmail.com).
+For any inquiries or support, please contact [Sarthak Jain](mailto:mail.sarthakjain@gmail.com).
+
+Thank you for checking out Gear Trend! If you have any questions or suggestions, feel free to reach out.
